@@ -1,0 +1,31 @@
+## ARRAY ##
+## ----- ## 
+
+## Usage : [ nums.N | str.N ] ## 
+.N : declare the length of the array in a variable 
+    ARRAY → final int N = $expr$.length ;
+    java.lang.String → final int N = $expr$.length() ;
+
+
+
+## MAX UTILS ## 
+## --------- ## 
+
+## Usage : [ 1.inf | 1L.inf | 1.0.inf ] ## 
+.inf : declare <NUMBER>.MAX_VALUE in a variable
+    INT → final int INF = Integer.MAX_VALUE ;
+    DOUBLE -> final double INF = Double.MAX_VALUE ;
+    LONG → final long INF = Long.MAX_VALUE ;
+
+## Usage : [ cur.umax ] ## 
+.umax : Update a value with maximum
+    NUMBER → $expr$ = Math.max($expr$, $curMax$) ;
+
+## MIN UTILS ## 
+## --------- ## 
+
+## No negative INF, instead use ~INF ## 
+
+## Usage : [ cur.umin ] ## 
+.umin : Update a value with minimum
+    NUMBER → $expr$ = Math.min($expr$, $curMin$) ;
